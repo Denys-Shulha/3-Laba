@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Завдання</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* Горизонтальне меню */
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 15px 0;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* Секція з карточками */
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card button {
+            padding: 10px 15px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: darkblue;
+        }
+        /* Блок з кнопками */
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .buttons-container button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Горизонтальне меню -->
+    <nav class="menu">
+        <a href="#">Головна</a>
+        <a href="#">Про нас</a>
+        <a href="#">Послуги</a>
+        <a href="#">Контакти</a>
+        <a href="#">Блог</a>
+    </nav>
+    
+    <!-- Секція з карточками -->
+    <div class="cards-container">
+        <div class="card">
+            <img src="https://picsum.photos/300/200" alt="Картинка">
+            <h3>Сучасний ноутбук</h3>
+            <p>Ноутбук із потужним процесором та великим екраном.</p>
+            <button>Купити</button>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/300/200" alt="Картинка">
+            <h3>Безплатний вебінар</h3>
+            <p>Дізнайся всі секрети веб-розробки на нашому вебінарі.</p>
+            <button>Записатися</button>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/300/200" alt="Картинка">
+            <h3>Крута футболка</h3>
+            <p>100% бавовна, доступні різні кольори.</p>
+            <button>Детальніше</button>
+        </div>
+    </div>
+    
+    <!-- Блок з кнопками -->
+    <div class="buttons-container">
+        <button>Кнопка 1</button>
+        <button>Кнопка 2</button>
+        <button>Кнопка 3</button>
+    </div>
+</body>
+</html>
